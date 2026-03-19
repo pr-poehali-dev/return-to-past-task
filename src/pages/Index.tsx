@@ -158,7 +158,7 @@ export default function Index() {
             <div className="absolute -bottom-4 -right-4 w-48 h-48 border border-gold/20 z-0" />
             <div className="absolute -top-4 -left-4 w-24 h-24 border border-gold/15 z-0" />
             <div className="absolute bottom-8 left-6 z-20">
-              <div className="font-display text-sm text-gold tracking-widest uppercase">Адвокатский стаж</div>
+              <div className="font-display text-sm text-gold tracking-widest uppercase">Стаж в уголовном праве</div>
               <div className="font-display text-5xl font-light text-foreground">18 <span className="text-xl">лет</span></div>
             </div>
           </div>
