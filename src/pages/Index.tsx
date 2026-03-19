@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
-const LAWYER_PHOTO = "https://cdn.poehali.dev/projects/def78d0b-7610-4e89-a200-4a914aa8cb3b/files/04598b9e-469c-473b-a825-7db1662fe5c1.jpg";
+const LAWYER_PHOTO = "https://cdn.poehali.dev/projects/def78d0b-7610-4e89-a200-4a914aa8cb3b/bucket/afbf0a47-8821-49a8-a585-39b873485886.jpg";
 
 const navItems = [
   { id: "about", label: "Обо мне" },
