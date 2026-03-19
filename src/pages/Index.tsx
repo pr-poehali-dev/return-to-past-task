@@ -25,10 +25,10 @@ const services = [
 ];
 
 const results = [
-  { number: "340+", label: "Дел завершено" },
+  { number: "150+", label: "Дел защищено" },
   { number: "87%", label: "Оправдательных приговоров или прекращений дел" },
   { number: "18", label: "Лет практики" },
-  { number: "120+", label: "Клиентов вышли на свободу" },
+  { number: "60+", label: "Клиентов вышли на свободу" },
 ];
 
 const cases = [
@@ -65,7 +65,7 @@ export default function Index() {
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50" style={{ background: "hsl(220 15% 5% / 0.95)", backdropFilter: "blur(12px)" }}>
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
           <div className="font-display text-xl font-semibold text-gold tracking-wide">
-            Д.А. Маханов
+            Маханов Д.А.
           </div>
           <div className="hidden lg:flex items-center gap-7">
             {navItems.map(item => (
@@ -171,16 +171,16 @@ export default function Index() {
               Защита, основанная на <span className="italic text-gold">опыте</span>
             </h2>
             <div className="space-y-4 text-muted-foreground font-body text-sm leading-relaxed">
-              <p>Денис Анатольевич Маханов — адвокат, специализирующийся на защите по уголовным делам. Член Адвокатской палаты города Москвы с 2006 года.</p>
+              <p>Денис Анатольевич Маханов — адвокат, специализирующийся на защите по уголовным делам. Член Адвокатской палаты города Улан-Удэ с 2006 года.</p>
               <p>Прошёл путь от помощника следователя до независимого адвоката с собственной практикой. Понимаю систему изнутри — это даёт реальное преимущество при защите клиентов.</p>
               <p>Специализируюсь на делах о насилии, экономических преступлениях, наркотиках и налоговых нарушениях. Работаю по всей России.</p>
             </div>
             <div className="mt-8 pt-8 border-t border-border/40 grid grid-cols-2 gap-6">
               {[
-                { label: "Образование", value: "МГЮА им. Кутафина" },
+                { label: "Образование", value: "ИГУ" },
                 { label: "Специализация", value: "Уголовное право" },
-                { label: "Членство", value: "АП г. Москвы" },
-                { label: "Регион", value: "Вся Россия" },
+                { label: "Членство", value: "АП г. Улан-Удэ" },
+                { label: "Регион", value: "Иркутская область" },
               ].map((item, i) => (
                 <div key={i}>
                   <div className="font-body text-xs text-muted-foreground tracking-widest uppercase mb-1">{item.label}</div>
@@ -490,10 +490,8 @@ export default function Index() {
               </h2>
               <div className="space-y-6">
                 {[
-                  { icon: "Phone", label: "Телефон", value: "+7 (495) 000-00-00", sub: "Звонки принимаются 24/7" },
-                  { icon: "Mail", label: "Email", value: "morozov@advokat.ru", sub: "Ответ в течение 2 часов" },
-                  { icon: "MapPin", label: "Адрес", value: "Москва, ул. Тверская, 12", sub: "Приём по предварительной записи" },
-                  { icon: "MessageCircle", label: "Telegram", value: "@morozov_advokat", sub: "Мессенджер для связи" },
+                  { icon: "Phone", label: "Телефон", value: "+7 (902) 543-63-78", sub: "Звонки принимаются 24/7" },
+                  { icon: "MapPin", label: "Адрес", value: "Иркутск", sub: "Приём по предварительной записи" },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start">
                     <div className="w-10 h-10 border border-gold/30 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -543,9 +541,9 @@ export default function Index() {
       {/* FOOTER */}
       <footer className="border-t border-border/30 py-8" style={{ background: "hsl(220 15% 5%)" }}>
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="font-display text-xl text-gold">Д.А. Маханов</div>
+          <div className="font-display text-xl text-gold">Маханов Д.А.</div>
           <div className="font-body text-xs text-muted-foreground text-center">
-            © 2026 Адвокат Маханов Д.А. · Адвокатская палата г. Москвы · Реестровый номер: 77/1234
+            © 2026 Адвокат Маханов Д.А. · Адвокатская палата г. Улан-Удэ
           </div>
           <div className="font-body text-xs text-muted-foreground">
             Информация не является юридической консультацией
