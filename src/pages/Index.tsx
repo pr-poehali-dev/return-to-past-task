@@ -65,7 +65,7 @@ export default function Index() {
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50" style={{ background: "hsl(220 15% 5% / 0.95)", backdropFilter: "blur(12px)" }}>
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
           <div className="font-display text-xl font-semibold text-gold tracking-wide">
-            А.В. Морозов
+            Д.А. Маханов
           </div>
           <div className="hidden lg:flex items-center gap-7">
             {navItems.map(item => (
@@ -109,9 +109,9 @@ export default function Index() {
               <span className="text-gold font-body text-xs tracking-widest uppercase">Адвокат по уголовным делам</span>
             </div>
             <h1 className="font-display text-6xl md:text-7xl lg:text-8xl font-light leading-none mb-4 text-foreground">
-              Александр
+              Денис
               <br />
-              <span className="font-semibold italic">Морозов</span>
+              <span className="font-semibold italic">Маханов</span>
             </h1>
             <p className="font-body text-muted-foreground text-base leading-relaxed mb-3 animate-fade-in-delay" style={{ maxWidth: "480px" }}>
               18 лет практики в уголовном праве. Защищаю интересы граждан и бизнеса на всех стадиях уголовного процесса.
@@ -171,7 +171,7 @@ export default function Index() {
               Защита, основанная на <span className="italic text-gold">опыте</span>
             </h2>
             <div className="space-y-4 text-muted-foreground font-body text-sm leading-relaxed">
-              <p>Александр Васильевич Морозов — адвокат, специализирующийся на защите по уголовным делам. Член Адвокатской палаты города Москвы с 2006 года.</p>
+              <p>Денис Анатольевич Маханов — адвокат, специализирующийся на защите по уголовным делам. Член Адвокатской палаты города Москвы с 2006 года.</p>
               <p>Прошёл путь от помощника следователя до независимого адвоката с собственной практикой. Понимаю систему изнутри — это даёт реальное преимущество при защите клиентов.</p>
               <p>Специализируюсь на делах о насилии, экономических преступлениях, наркотиках и налоговых нарушениях. Работаю по всей России.</p>
             </div>
@@ -543,9 +543,9 @@ export default function Index() {
       {/* FOOTER */}
       <footer className="border-t border-border/30 py-8" style={{ background: "hsl(220 15% 5%)" }}>
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="font-display text-xl text-gold">А.В. Морозов</div>
+          <div className="font-display text-xl text-gold">Д.А. Маханов</div>
           <div className="font-body text-xs text-muted-foreground text-center">
-            © 2026 Адвокат Морозов А.В. · Адвокатская палата г. Москвы · Реестровый номер: 77/1234
+            © 2026 Адвокат Маханов Д.А. · Адвокатская палата г. Москвы · Реестровый номер: 77/1234
           </div>
           <div className="font-body text-xs text-muted-foreground">
             Информация не является юридической консультацией
