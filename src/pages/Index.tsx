@@ -153,7 +153,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <div className="relative z-10 overflow-hidden" style={{ aspectRatio: "4/5" }}>
-              <img src={LAWYER_PHOTO} alt="Адвокат Денис Маханов" className="w-full h-full object-cover object-top grayscale contrast-110" />
+              <img src={LAWYER_PHOTO} alt="Адвокат Денис Маханов" className="w-full h-full object-cover object-top" />
               <div className="absolute inset-0" style={{ background: "linear-gradient(to top, hsl(220 15% 7%) 0%, transparent 50%)" }} />
             </div>
             <div className="absolute -bottom-4 -right-4 w-48 h-48 border border-gold/20 z-0" />
@@ -258,9 +258,8 @@ export default function Index() {
               </div>
             </div>
             <div>
-              <div className="relative mb-8 overflow-hidden" style={{ aspectRatio: "16/10" }}>
-                <img src={LAWYER_PHOTO_2} alt="Адвокат Денис Маханов в рабочем кабинете" className="w-full h-full object-cover object-top grayscale contrast-110" />
-                <div className="absolute inset-0" style={{ background: "linear-gradient(to top, hsl(220 15% 7% / 0.5) 0%, transparent 40%)" }} />
+              <div className="relative mb-8 overflow-hidden">
+                <img src={LAWYER_PHOTO_2} alt="Адвокат Денис Маханов в рабочем кабинете" className="w-full h-auto" />
               </div>
               <h3 className="font-display text-2xl font-light text-foreground mb-6">Специализация по статьям</h3>
               <div className="space-y-4">
