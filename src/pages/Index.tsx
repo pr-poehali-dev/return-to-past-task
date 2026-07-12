@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
-const LAWYER_PHOTO = "https://cdn.poehali.dev/projects/def78d0b-7610-4e89-a200-4a914aa8cb3b/bucket/d617b17d-8a33-4d47-b407-412b9c2c2984.jpg";
+const LAWYER_PHOTO = "https://cdn.poehali.dev/projects/def78d0b-7610-4e89-a200-4a914aa8cb3b/bucket/469d658b-285c-4851-821f-4e28f446f125.jpg";
+const LAWYER_PHOTO_2 = "https://cdn.poehali.dev/projects/def78d0b-7610-4e89-a200-4a914aa8cb3b/bucket/b1a9afe5-37bc-4d57-b253-2b5586007053.jpg";
 
 const navItems = [
   { id: "about", label: "Обо мне" },
@@ -152,7 +153,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <div className="relative z-10 overflow-hidden" style={{ aspectRatio: "4/5" }}>
-              <img src={LAWYER_PHOTO} alt="Адвокат Александр Морозов" className="w-full h-full object-cover object-top grayscale contrast-110" />
+              <img src={LAWYER_PHOTO} alt="Адвокат Денис Маханов" className="w-full h-full object-cover object-top grayscale contrast-110" />
               <div className="absolute inset-0" style={{ background: "linear-gradient(to top, hsl(220 15% 7%) 0%, transparent 50%)" }} />
             </div>
             <div className="absolute -bottom-4 -right-4 w-48 h-48 border border-gold/20 z-0" />
@@ -256,24 +257,30 @@ export default function Index() {
                 ))}
               </div>
             </div>
-            <div className="space-y-4">
+            <div>
+              <div className="relative mb-8 overflow-hidden" style={{ aspectRatio: "16/10" }}>
+                <img src={LAWYER_PHOTO_2} alt="Адвокат Денис Маханов в рабочем кабинете" className="w-full h-full object-cover object-top grayscale contrast-110" />
+                <div className="absolute inset-0" style={{ background: "linear-gradient(to top, hsl(220 15% 7% / 0.5) 0%, transparent 40%)" }} />
+              </div>
               <h3 className="font-display text-2xl font-light text-foreground mb-6">Специализация по статьям</h3>
-              {[
-                { art: "Ст. 105 УК РФ", name: "Убийство", count: "48 дел" },
-                { art: "Ст. 159 УК РФ", name: "Мошенничество", count: "85 дел" },
-                { art: "Ст. 228–234 УК РФ", name: "Наркотики", count: "62 дела" },
-                { art: "Ст. 161–163 УК РФ", name: "Грабёж, разбой, вымогательство", count: "40 дел" },
-                { art: "Ст. 198–199 УК РФ", name: "Налоговые преступления", count: "55 дел" },
-                { art: "Ст. 290–291 УК РФ", name: "Взяточничество", count: "50 дел" },
-              ].map((item, i) => (
-                <div key={i} className="flex items-center justify-between py-3 border-b border-border/30">
-                  <div>
-                    <span className="font-body text-xs text-gold tracking-wide">{item.art}</span>
-                    <div className="font-display text-base text-foreground">{item.name}</div>
+              <div className="space-y-4">
+                {[
+                  { art: "Ст. 105 УК РФ", name: "Убийство", count: "48 дел" },
+                  { art: "Ст. 159 УК РФ", name: "Мошенничество", count: "85 дел" },
+                  { art: "Ст. 228–234 УК РФ", name: "Наркотики", count: "62 дела" },
+                  { art: "Ст. 161–163 УК РФ", name: "Грабёж, разбой, вымогательство", count: "40 дел" },
+                  { art: "Ст. 198–199 УК РФ", name: "Налоговые преступления", count: "55 дел" },
+                  { art: "Ст. 290–291 УК РФ", name: "Взяточничество", count: "50 дел" },
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center justify-between py-3 border-b border-border/30">
+                    <div>
+                      <span className="font-body text-xs text-gold tracking-wide">{item.art}</span>
+                      <div className="font-display text-base text-foreground">{item.name}</div>
+                    </div>
+                    <div className="font-body text-xs text-muted-foreground">{item.count}</div>
                   </div>
-                  <div className="font-body text-xs text-muted-foreground">{item.count}</div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
